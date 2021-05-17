@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='mainstylesheet.css') }}">
+</head>
+
+<body style=background-attachment:fixed;>
+<h2> Hey</h2>
+<h1>Remember!</h1><br>
+<form action="" method="post" role="form">
+<p> - A friendly reminder costumize just for you - </p><br>
+<input type="text" id="name" class="form-control" name="name" placeholder="Input command here" size="40">
+<button type="submit" class="btn btn-success">Submit</button>
+{% for i in listOfChatAll %}
+<div class="hasil"><h3 style="background-color: white; padding:10px 10px; margin-left:640px;margin-right:100px">
+    <pre>{{i[0]}}</pre>
+    </h3></div>
+    <div class="hasil"><h3 style="background-color: white; padding:10px 10px; margin-left:100px;margin-right:600px; text-align: left;">
+      <pre>{{i[1]}}</pre>
+  </div>
+</h3>
+{% endfor %}
+
+</div></div>
+</form>
+</body>
+
+</html>
